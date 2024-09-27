@@ -4,17 +4,11 @@
 </p>
 <h2>Resultat</h2>
 <?php
+
+// déclarer les 2 variables et utiliser la fonction (str_replace);
 $maPhrase = "« Notre formation DL commence aujourd'hui » <br>";
 $maDeuxiemePhrase = str_replace("aujourd'hui","demain", $maPhrase) ;
 
-
-
-
-
-
-
-
-
-echo $maPhrase ;
-echo $maDeuxiemePhrase;
+echo "l'ancienne phrase est : $maPhrase ";
+echo "la nouvelle phrase est : $maDeuxiemePhrase";
 

@@ -3,11 +3,16 @@
 <h2>Resultat</h2>
 <?php
 
-$maPhrase = "gagne ma phrase";
+// ecrire en miniscule + enlever les espace + inverser la phrase;
 
-$maNouvellePhrase = strrev($maPhrase) ;
-echo $maNouvellePhrase;
+        $maPhrase = "Engage le jeu que je le gagne";
 
-
-
-
+        $phraseMin = strtolower($maPhrase);
+        $maPhrase2 = str_replace(" ", "", $phraseMin);
+        $result = strrev($maPhrase2);
+        if( $maPhrase2 == $result){
+            echo " La Phrase $maPhrase est palindrom";
+        } else {
+            echo " La Phrase $maPhrase n'est pas palindrom";
+        }
+        

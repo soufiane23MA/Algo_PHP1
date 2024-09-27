@@ -8,20 +8,25 @@ Si la catégorie n’est pas gérée, merci de le préciser
 </p>
 <h2>Resultat</h2>
 <?php
-$personne = " ";
-$age = 10 ;
 
-if( $age >= 6  && $age < 8 ) {
-    $personne = "poussin";
-}else if ($age >= 8 && $age <10 )   {
-$personne ="Pupille";
-} else if ( $age >= 10 && $age <12 ){
- $personne = "Minime";
+    $personne = " ";
+    $age = 7 ;
 
-}else if( $age >= 12  ){
-$personne = "Cadet";
-}else{
-    echo "Si la catégorie n’est pas gérée, merci de le préciser. ";
-};
+// commence tjr par la tranche d'age la plus élevée;
+// il a falut rajouter la derniére condition pour afficher le tous correctement.
 
-echo " L'enfant qui a $age  ans appartient à la Cathégorie << $personne >>";
+    if( $age >= 12  ){
+    $personne = "Cadet";
+    }else if ( $age >= 10){
+    $personne = "Minime";
+    }else if ($age >= 8 )   {
+    $personne ="Pupille";
+    }else if( $age >= 6   ) {
+        $personne = "poussin";
+    } else if( $personne < 6 ){
+      
+    echo " la catégorie n’est pas gérée, merci de le préciser. ";
+    }  
+    echo " L'enfant qui a $age  ans appartient à la Cathégorie << $personne >>"; 
+
+ 
